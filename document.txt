@@ -1,0 +1,68 @@
+                               TOOL AND LIBRARY  
+
+Python: Python is a high-level programming language known for its simplicity and readability. It is widely used for various purposes, including data analysis, web development, and automation.  
+
+Pandas: Pandas is a powerful Python library for data manipulation and analysis. It provides data structures like DataFrame and Series, which are ideal for handling structured data like tabular data from Excel files. In the provided code, Pandas is used to read data from the Excel file into a DataFrame and perform data manipulation operations. 
+
+xlrd (Optional): xlrd is a Python library for reading data and formatting information from Excel files (.xls). It is one of the dependencies of Pandas for reading Excel files. In the provided code, Pandas internally uses xlrd to read data from the Excel file.   
+
+Openpyxl (Optional): Openpyxl is another Python library for reading and writing Excel files, specifically for Excel files in the newer .xlsx format. While not used directly in the provided code, Pandas also supports reading Excel files using Openpyxl as an alternative to xlrd for .xlsx files.  
+
+NLTK (Natural Language Toolkit):
+
+Description: NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources, such as WordNet. Additionally, NLTK includes a suite of text processing libraries for tokenization, stemming, tagging, parsing, and semantic reasoning.
+Features:
+Tokenization: Breaking text into words or sentences.
+Stemming: Reducing words to their root or base form.
+Part-of-Speech Tagging: Assigning grammatical tags to words (e.g., noun, verb).
+Named Entity Recognition (NER): Identifying named entities like person names, organization names, etc.
+Sentiment Analysis: Determining the sentiment of text (positive, negative, neutral).
+WordNet Interface: Access to WordNet, a lexical database of English words and their relationships.
+Use Case: NLTK is widely used for various NLP tasks, including text classification, sentiment analysis, language translation, and information retrieval.
+scikit-learn:
+
+Description: scikit-learn is a versatile machine learning library for Python that provides simple and efficient tools for data mining and data analysis. It features various algorithms for classification, regression, clustering, dimensionality reduction, model selection, and preprocessing.
+Features:
+Classification: Predicting categories or labels for new data points.
+Regression: Predicting continuous values based on input features.
+Clustering: Grouping similar data points together based on their characteristics.
+Dimensionality Reduction: Reducing the number of input features while preserving important information.
+Model Evaluation: Assessing the performance of machine learning models using various metrics.
+Preprocessing: Standardizing, scaling, or transforming input data to improve model performance.
+Use Case: scikit-learn is used for a wide range of machine learning tasks, including but not limited to, text classification, sentiment analysis, image recognition, and predictive modeling.  
+
+First we create virtual environment following these commands 
+
+pip install virtualenv 
+virtualenv env 
+env/Scripts/activate.ps1 
+
+after these command virtual environment has created 
+
+then we install these libraries which is given below 
+
+You can install Pandas  using pip by running the following command in your terminal or command prompt:  
+
+pip install pandas  
+
+You can install NLTK using pip by running the following command in your terminal or command prompt: 
+
+pip install nltk
+ 
+You can install scikit-learn using pip by running the following command:  
+
+pip install scikit-learn
+
+After installing the libraries, you can import them into your Python script using the import statement: 
+
+import nltk
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.decomposition import LatentDirichletAllocation
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from string import punctuation
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+after that you have to run this script 
+
+python test.py .........using this command output will given to you.
